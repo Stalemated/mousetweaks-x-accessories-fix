@@ -8,26 +8,14 @@
 		"Stalemated"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/Stalemated/mousetweaks-x-accessories-fix"
 	},
 	"license": "MIT",
 	"icon": "assets/mousetweaks-x-accessories-fix/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.stalemated.MouseTweaksXAccessoriesFix"
-		],
-		"client": [
-			"com.stalemated.MouseTweaksXAccessoriesFixClient"
-		]
-	},
+	"environment": "client",
 	"mixins": [
-		"mousetweaks-x-accessories-fix.mixins.json",
-		{
-			"config": "mousetweaks-x-accessories-fix.client.mixins.json",
-			"environment": "client"
-		}
+		"mousetweaks-x-accessories-fix.client.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.3",
