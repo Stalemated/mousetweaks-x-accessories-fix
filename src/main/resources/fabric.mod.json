@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "mousetweaks-x-accessories-fix",
+	"version": "${version}",
+	"name": "MouseTweaks x Accessories Fix",
+	"description": "Disables the Wheel Tweak in the Accessories GUI",
+	"authors": [
+		"Stalemated"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mousetweaks-x-accessories-fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.stalemated.MouseTweaksXAccessoriesFix"
+		],
+		"client": [
+			"com.stalemated.MouseTweaksXAccessoriesFixClient"
+		]
+	},
+	"mixins": [
+		"mousetweaks-x-accessories-fix.mixins.json",
+		{
+			"config": "mousetweaks-x-accessories-fix.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
