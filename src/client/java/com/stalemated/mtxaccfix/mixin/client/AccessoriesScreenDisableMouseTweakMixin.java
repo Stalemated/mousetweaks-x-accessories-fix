@@ -1,4 +1,4 @@
-package com.stalemated.mixin.client;
+package com.stalemated.mtxaccfix.mixin.client;
 
 import io.wispforest.accessories.client.gui.AccessoriesScreen;
 import org.spongepowered.asm.mixin.Mixin;
