@@ -57,7 +57,7 @@ dependencies {
 processResources {
 	inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
+	filesMatching(["fabric.mod.json", "META-INF/mods.toml", "META-INF/neoforge.mods.toml"]) {
 		expand "version": inputs.properties.version
 	}
 }
@@ -81,6 +81,12 @@ jar {
 
 	from("LICENSE") {
 		rename { "${it}_${inputs.properties.archivesName}"}
+	}
+	
+	manifest {
+		attributes([
+			"MixinConfigs": "mousetweaks-x-accessories-fix.client.mixins.json"
+		])
 	}
 }
 
