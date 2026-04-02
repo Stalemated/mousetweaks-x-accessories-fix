@@ -5,7 +5,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import yalter.mousetweaks.api.MouseTweaksDisableWheelTweak;
 
 @MouseTweaksDisableWheelTweak
-@Mixin(value = AccessoriesScreen.class, priority = 1000)
+@Mixin(value = AccessoriesScreen.class)
 public class AccessoriesScreenDisableMouseTweakMixin {
 
 	// This mixin applies the @MouseTweaksDisableWheelTweak annotation to AccessoriesScreen

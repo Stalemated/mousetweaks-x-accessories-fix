@@ -2,8 +2,10 @@
 	"required": true,
 	"package": "com.stalemated.mtxaccfix.mixin",
 	"compatibilityLevel": "JAVA_17",
+	"plugin": "com.stalemated.mtxaccfix.mixin.MtxAccFixMixinPlugin",
 	"client": [
-		"client.AccessoriesScreenDisableMouseTweakMixin"
+		"client.AccessoriesScreenDisableMouseTweakMixin",
+		"client.AccessoriesExperimentalScreenDisableMouseTweakMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
